@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-primary: #E3E4F1;
+    --color-secondary: #FFFFFF;
+    --color-bottom: rgba(206, 203, 203, 0.912);
+    --color-min: #3A7CFD;
+    /* ... */
+  }
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: rgba(128, 128, 128, 0.112);
+}
+.ombre{
+    box-shadow: 0 0 5px rgb(169, 168, 168),
+                0 0 25px rgb(169, 168, 168),
+                0 0 0px rgb(169, 168, 168),
+                0 0 0px rgb(169, 168, 168);
+}
+.font{
+    font-family: "Josefin Sans", sans-serif;
+}
+.croix{
+  color: white;
+  transition: 0.25s ease;
+}
+.croix:hover{
+  color: gray;
+  cursor: pointer;
+}
+
+/* media query */
+
+/* @media only screen and (max-width: 431px){
+  .iphone_todo{
+    width: 85%;
+    background-color: red;
+  }
+} */
