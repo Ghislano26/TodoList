@@ -10,6 +10,8 @@
     --color-secondary: #FFFFFF;
     --color-bottom: rgba(206, 203, 203, 0.912);
     --color-min: #3A7CFD;
+    --body-dark-mode: #171823;
+    --section-dark-mode:#25273D;
     /* ... */
   }
 }
