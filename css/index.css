@@ -35,6 +35,7 @@ body{
                 0 0 0px rgb(169, 168, 168),
                 0 0 0px rgb(169, 168, 168);
 }
+
 .font{
     font-family: "Josefin Sans", sans-serif;
 }
@@ -49,9 +50,52 @@ body{
 
 /* media query */
 
-/* @media only screen and (max-width: 431px){
-  .iphone_todo{
-    width: 85%;
-    background-color: red;
+@media only screen and (max-width: 400px){
+  .section_iphone{
+    height: 190vh;
   }
-} */
+}
+
+@media only screen and (max-width: 380px){
+  .section_todo{
+      height: 120vh;
+  }
+  .footer__todo{
+    margin-top: 145%;
+  }
+}
+
+
+
+/* function add(input) {
+  const word = `
+  <div class="flex  flex-[2] gap-[1rem] text-[1rem]">
+                          <img src="assets/img/Oval.svg" alt=""  id="circle_hover"  class=" cursor-pointer h-[2rem] sm:h-[2.5rem]">
+                          <h3 class="line-through text-[1.2rem] font sm:text-[1.7rem] md:text-[1.9rem] 2xl:text-[1.2rem]">${input}
+  </div>
+                      <div class="flex items-center justify-end flex-1 text-[2rem] text-gray-400 ">
+                          <ion-icon name="close-outline" class="croix sm:text-[2rem] md:text-[3rem] xl:text-[4rem] 2xl:text-[2.5rem]"></ion-icon>
+                      </div>
+  `;
+  const pos = 'beforeend';
+  task.insertAdjacentHTML(pos,word);
+}
+
+document.addEventListener('keyup', (event) =>{
+  if (event.keyCode == 13) {
+      const input = inputList.value;
+      if (input.length <= 5) return;
+      add(input);
+      inputList.value = "";
+  }
+})
+
+
+
+
+function verifChar(){
+  checkImg.src = 'assets/img/Oval.svg';
+  if (inputList.value.length >=5) {
+      checkImg.src = 'assets/img/check-active.svg'; 
+  }
+}  */

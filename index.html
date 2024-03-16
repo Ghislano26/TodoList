@@ -11,7 +11,7 @@
 <body>
     
     <section class="w-full h-[40%]  bg-[url('assets/img/banniere.svg')] bg-no-repeat bg-cover bg-center flex justify-center pt-[5rem] 2xl:h-[50%]">
-        <div class="h-[260%] flex flex-col gap-[1rem] w-[90%] md:w-[95%] h-[290%] 2xl:w-[50%] gap-[3rem] h-[300%]">
+        <div class="h-[260%] flex flex-col gap-[1rem] w-[90%] md:w-[95%] h-[290%] 2xl:w-[50%] gap-[3rem] h-[300%] section_todo">
             <div class="w-full h-[10%] flex justify-between items-center">
                 <h1 class="tracking-[1rem] text-[3rem] font-semibold text-[var(--color-secondary)] sm:text-[4rem] 2xl:text-[3rem]">TODO</h1>
                 <img src="assets/img/img-light.svg" alt="" id="light_mode_img" class="cursor-pointer  h-[2rem] sm:h-[3rem]">
@@ -22,70 +22,68 @@
                 <input oninput="verifChar()" id="inputList" type="text" class="w-[92%] h-[100%] p-[1rem] outline-none text-[1.5rem] font sm:text-[2rem] md:text-[2.5rem] 2xl:text-[1.5rem]" placeholder="Create a new todo…">
             </div>
 
-            <div id="todolist" class="w-full h-[90%] bg-[var(--color-secondary)] flex flex-col gap-[0rem] rounded-md ombre transition-all">
+            <div id="todolist" class="w-full h-[90%] bg-[var(--color-secondary)] flex flex-col gap-[0rem] rounded-md ombre transition-all section_iphone">
                 <div class="w-full h-[18%] flex items-center gap-[1rem] pl-[1rem] border-b-[1.5px] border-[var(color-bottom)] text-gray-300 hover:bg-slate-200 ">
-                    
                     <div class="flex  flex-[2] gap-[1rem] text-[1rem]">
-                        <img src="assets/img/Oval.svg" alt=""  id="circle_hover"  class=" mt-[2rem] cursor-pointer h-[2rem] sm:h-[2.5rem] ">
+                        <img src="assets/img/Oval.svg" alt=""  id="circle_hover"  class=" cursor-pointer h-[2rem] sm:h-[2.5rem]">
                         <h3 class="line-through text-[1.2rem] font sm:text-[1.7rem] md:text-[1.9rem] 2xl:text-[1.2rem]">Complete online JavaScript course</h3>
                     </div>
                     <div class="flex items-center justify-end flex-1 text-[2rem] text-gray-400 ">
                         <ion-icon name="close-outline" class="croix sm:text-[2rem] md:text-[3rem] xl:text-[4rem] 2xl:text-[2.5rem]"></ion-icon>
                     </div>
                 </div>
-                
-                <div class="w-full h-[18%] flex items-center gap-[1rem] pl-[1rem] border-b-[1.5px] border-[var(color-bottom)] font-semibold hover:bg-slate-200">
-                    <div class="flex  flex-[2] gap-[1rem]">
-                        <img src="assets/img/Oval.svg" alt=""  id="circle_hover" class="cursor-pointer sm:h-[2rem] md:h-[2.5rem]">
-                        <h3 class="text-[1.2rem] font sm:text-[2rem] md:text-[2.5rem] 2xl:text-[1.2rem]">Jog around the park 3x</h3>
-                    </div>
-                    <div class="flex items-center justify-end flex-1 text-[2rem] text-gray-400 ">
-                        <ion-icon name="close-outline" class="croix sm:text-[2rem] md:text-[3rem] xl:text-[4rem] 2xl:text-[2.5rem]"></ion-icon>
-                    </div>
-                </div>
+                    <!-- <div class="w-full h-[18%] flex items-center gap-[1rem] pl-[1rem] border-b-[1.5px] border-[var(color-bottom)] font-semibold hover:bg-slate-200">
+                        <div class="flex  flex-[2] gap-[1rem]">
+                            <img src="assets/img/Oval.svg" alt=""  id="circle_hover" class="cursor-pointer sm:h-[2rem] md:h-[2.5rem]">
+                            <h3 class="text-[1.2rem] font sm:text-[2rem] md:text-[2.5rem] 2xl:text-[1.2rem] text_one">Jog around the park 3x</h3>
+                        </div>
+                        <div class="flex items-center justify-end flex-1 text-[2rem] text-gray-400 ">
+                            <ion-icon name="close-outline" class="croix sm:text-[2rem] md:text-[3rem] xl:text-[4rem] 2xl:text-[2.5rem]"></ion-icon>
+                        </div>
+                    </div> -->
 
-                <div class="w-full h-[18%] flex items-center gap-[1rem] pl-[1rem] border-b-[1.5px] border-[var(color-bottom)] font-semibold hover:bg-slate-200">
+                <!-- <div class="w-full h-[18%] flex items-center gap-[1rem] pl-[1rem] border-b-[1.5px] border-[var(color-bottom)] font-semibold hover:bg-slate-200">
                     <div class="flex  flex-[2] gap-[1rem]">
                         <img src="assets/img/Oval.svg" alt="" id="circle_hover" class="cursor-pointer sm:h-[2rem] md:h-[2.5rem]">
-                        <h3 class="text-[1.2rem] font  sm:text-[2rem] md:text-[2.5rem] 2xl:text-[1.2rem]">10 minutes meditation</h3>
+                        <h3 class="text-[1.2rem] font  sm:text-[2rem] md:text-[2.5rem] 2xl:text-[1.2rem] text_two">10 minutes meditation</h3>
                     </div>
                     <div class="flex items-center justify-end flex-1 text-[2rem] text-gray-400 ">
                         <ion-icon name="close-outline" class="croix sm:text-[2rem] md:text-[3rem] xl:text-[4rem] 2xl:text-[2.5rem]"></ion-icon>
                     </div>
                     
-                </div>
+                </div> -->
 
-                <div class="w-full h-[18%] flex items-center gap-[1rem] pl-[1rem] border-b-[1.5px] border-[var(color-bottom)] font-semibold hover:bg-slate-200">
+                <!-- <div class="w-full h-[18%] flex items-center gap-[1rem] pl-[1rem] border-b-[1.5px] border-[var(color-bottom)] font-semibold hover:bg-slate-200">
                     <div class="flex  flex-[2] gap-[1rem]">
                         <img src="assets/img/Oval.svg" alt="" id="circle_hover" class="cursor-pointer sm:h-[2rem] md:h-[2.5rem]">
-                        <h3 class="text-[1.2rem] font  sm:text-[2rem] md:text-[2.5rem] 2xl:text-[1.2rem]">Read for 1 hour</h3>
+                        <h3 class="text-[1.2rem] font  sm:text-[2rem] md:text-[2.5rem] 2xl:text-[1.2rem] text_three">Read for 1 hour</h3>
                     </div>
                     <div class="flex items-center justify-end flex-1 text-[2rem] text-gray-400 ">
                         <ion-icon name="close-outline" class="croix sm:text-[2rem] md:text-[3rem] xl:text-[4rem] 2xl:text-[2.5rem]"></ion-icon>
                     </div>
                     
-                </div>
+                </div> -->
 
-                <div class="w-full h-[18%]  flex items-center gap-[1rem] pl-[1rem] border-b-[1.5px] border-[var(color-bottom)] font-semibold hover:bg-slate-200">
+                <!-- <div class="w-full h-[18%]  flex items-center gap-[1rem] pl-[1rem] border-b-[1.5px] border-[var(color-bottom)] font-semibold hover:bg-slate-200">
                     <div class="flex  flex-[2] gap-[1rem]">
                         <img src="assets/img/Oval.svg" alt="" id="circle_hover" class="cursor-pointer sm:h-[2rem] md:h-[2.5rem]">
-                        <h3 class="text-[1.2rem] font  sm:text-[2rem] md:text-[2.5rem] 2xl:text-[1.2rem]">Pick up groceries</h3>
+                        <h3 class="text-[1.2rem] font  sm:text-[2rem] md:text-[2.5rem] 2xl:text-[1.2rem] text_four">Pick up groceries</h3>
                     </div>
                     <div class="flex items-center justify-end flex-1 text-[2rem] text-gray-400 ">
                         <ion-icon name="close-outline" class="croix sm:text-[2rem] md:text-[3rem] xl:text-[4rem] 2xl:text-[2.5rem]"></ion-icon>
                     </div>
-                </div>
+                </div> -->
 
-                <div class="w-full h-[18%] flex items-center gap-[1rem] pl-[1rem] border-b-[1.5px] border-[var(color-bottom)] font-semibold hover:bg-slate-200">
+                <!-- <div class="w-full h-[18%] flex items-center gap-[1rem] pl-[1rem] border-b-[1.5px] border-[var(color-bottom)] font-semibold hover:bg-slate-200">
                     <div class="flex  flex-[2] gap-[1rem]">
                         <img src="assets/img/Oval.svg" alt="" id="circle_hover" class="cursor-pointer sm:h-[2rem] md:h-[2.5rem]">
-                        <h3 class="text-[1.2rem] font  sm:text-[2rem] md:text-[2.5rem] 2xl:text-[1.2rem]">Complete Todo App on Frontend Mentor</h3>
+                        <h3 class="text-[1.2rem] font  sm:text-[2rem] md:text-[2.5rem] 2xl:text-[1.2rem] text_five">Complete Todo App on Frontend Mentor</h3>
                     </div>
                     <div class="flex items-center justify-end flex-1 text-[2rem] text-gray-400 ">
                         <ion-icon name="close-outline" class="croix sm:text-[2rem] md:text-[3rem] xl:text-[4rem] 2xl:text-[2.5rem]"></ion-icon>
                     </div>
                     
-                </div>
+                </div> -->
 
                 <div  class="w-full h-[18%]  flex justify-between items-center border-b-[1.5px] border-[var(color-bottom)] text-gray-400">
                         <div class="flex justify-center flex-1">
@@ -115,7 +113,7 @@
         </div>
         
     </section>
-    <footer class="w-full h-[5%] rounded-md mt-[110%] flex items-center justify-center text-[1.1rem] text-gray-500 sm:mt-[120%] text-[1.3rem] md:text-[1.8rem] lg:mt-[90%] xl:mt-[75%] 2xl:mt-[40%]">
+    <footer class="footer__todo w-full h-[5%] rounded-md mt-[110%] flex items-center justify-center text-[1.1rem] text-gray-500 sm:mt-[120%] text-[1.3rem] md:text-[1.8rem] lg:mt-[90%] xl:mt-[75%] 2xl:mt-[40%]">
         <p class="2xl:text-[1rem]"> Drag and drop to reorder list</p>
     </footer>
     
